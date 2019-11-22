@@ -20,3 +20,28 @@
 .App-link {
   color: #09d3ac;
 }
+
+.NavBar {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  background: lightblue;
+  font-family: 'Times New Roman';
+}
+
+.left {
+  margin-left: 20px;
+}
+
+.right {
+  margin-right: 20px;
+}
+
+.mid {
+  margin-left: 200px;
+}

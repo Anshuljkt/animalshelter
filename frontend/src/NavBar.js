@@ -1,10 +1,11 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 const NavBar = () => (
     <nav class="NavBar">
         <p class="left">Benji's animal shelter</p>
-        <p class="mid">About</p>
-        <p class="right">Adopt a pet</p>
+        <Link to="/about" class="mid">About</Link>
+        <Link to="/" class="right">Adopt a pet</Link>
     </nav>
 )
 

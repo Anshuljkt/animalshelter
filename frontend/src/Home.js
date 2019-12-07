@@ -2,7 +2,7 @@ import React from "react"
 import NavBar from "./NavBar.js"
 import DogsAndPuppies from "./DogsandPuppies.js"
 import Cats from "./Cats.js"
-import AnimalCard from "./AnimalCard.js"
+import Animalcard from "./AnimalCard"
 
 const animalmap = [
     {
@@ -57,10 +57,10 @@ const Home = () => {
         return (
           <section>
             <DogsAndPuppies
-            name={props._id}
+            name={animalmap._id}
             />
             {section.pets.map(pet => (
-              <AnimalCard
+              <Animalcard
               name={pet.name}
               breed={pet.breed}
               status={pet.status}

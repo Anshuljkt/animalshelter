@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AnimalCard = props => {
+const Animalcard = props => {
   return (
       <div>
       <img src="https://picsum.photos/300/250"/>
@@ -12,4 +12,4 @@ const AnimalCard = props => {
       </div>
     )
 }
-export default AnimalCard
+export default Animalcard

@@ -2,6 +2,7 @@ import React from "react"
 import NavBar from "./NavBar.js"
 import DogsAndPuppies from "./DogsandPuppies.js"
 import Cats from "./Cats.js"
+import AnimalCard from "./AnimalCard.js"
 
 const animalmap = [
     {
@@ -52,7 +53,7 @@ const Home = () => {
     return (
         <div className="App">
       <NavBar />
-      {data.map(section => {
+      {animalmap.map(section => {
         return (
           <section>
             <DogsAndPuppies

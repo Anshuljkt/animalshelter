@@ -1,16 +1,23 @@
 import React from 'react';
 import './App.css';
-import NavBar from './NavBar.js';
-import DogsAndPuppies from './DogsandPuppies.js'
-import Cats from './Cats.js'
+import AboutPage from './AboutPage.js'
+import Home from './Home.js'
+import {BrowserRouter, Route, Switch} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <DogsAndPuppies />
-      <Cats />
-    </div>
+    <BrowserRouter>
+    <section>
+      <Switch>
+        <Route exact path = "/">
+         <Home />
+        </Route>
+        <Route exact path = "/about">
+          <AboutPage />
+        </Route>
+      </Switch>
+    </section>
+    </BrowserRouter>
   );
 }
 

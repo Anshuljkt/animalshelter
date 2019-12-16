@@ -1,53 +1,123 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.header {
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.sections {
+  margin-top: 40px;
+}
+
+.sectionsText {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.headerAbout {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.schedule {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+#topSection {
+  margin-top: 130px;
+}
+
+#bottomSection {
+  margin-bottom: 100px;
 }
 
 .NavBar {
   display: flex;
-  flex-direction: horizontal;
-  justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
-  background: lightblue;
-  font-family: 'Times New Roman';
+  justify-content: space-around;
+  background: #5BACFD;
+  font-size: 23px;
+  font-weight: 900;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 85px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 3%;
+  width: 94%; /* Full width */
+}
+
+.NavBar p {
+  color: white;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.NavBar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 30px;
 }
 
 .left {
-  margin-left: 20px;
-  font-family: 'Dekko';font-size: 22px;
-
+  display: flex;
+  align-items: center;
 }
 
 .right {
-  margin-right: 20px;
-  margin-top: 23px;
-  font-family: 'Dekko';font-size: 22px;
+  display: flex;
+  align-items: center;
 }
 
-.mid {
-  margin-left: 200px;
-  margin-top: 23px;
-  font-family: 'Dekko';font-size: 22px;
+#rightText {
+  margin-left: 55px;
+}
+
+body {
+  font-family: "Helvetica Neue", "Bookman";
+}
+
+.animalCard {
+  padding: 10px 10px;
+  height: 350px;
+  width: 225px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px 20px;
+}
+
+.animalCard img {
+  height: 125px;
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #5BACFD;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 100%;
+  font-size: 13px;
+}
+
+span {
+  font-weight: bold;
 }

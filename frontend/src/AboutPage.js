@@ -42,8 +42,8 @@ const Home = () => {
           <h1 className='headerAbout'>Adoption Hours</h1>
           <section class='schedule'>
             <p><span>Tuesday -</span> 6 - 9 PM</p>
-            <p><span>Tuesday -</span> 6 - 8 PM</p>
-            <p><span>Tuesday -</span> 10 AM - 4 PM</p>
+            <p><span>Thursday -</span> 6 - 8 PM</p>
+            <p><span>Saturday -</span> 10 AM - 4 PM</p>
           </section>
         </div>
     </div>

@@ -11,6 +11,6 @@ const petSchema = new mongoose.Schema({
     adopted: Boolean
 });
 
-// const Pet = mongoose.model('Pet', petSchema);
+const Pet = mongoose.model('Pet', petSchema);
 
-module.exports = mongoose.model('Pet', petSchema);
+module.exports = Pet;

@@ -17,9 +17,11 @@ app.set('view engine', 'jade');
 
 // connect to database
 MONGODB_URI= "mongodb+srv://bootie:backendpractice@cluster0-0vejq.mongodb.net/animal-adoption?retryWrites=true&w=majority";
-
-mongoose.connect("MONGODB_URI",{ useNewUrlParser: true }, (conn, err) => {
-	console.log("Successfully connected to the database")
+mongoose.connect(MONGODB_URI,{ useNewUrlParser: true, useUnifiedTopology: true }, (conn, err) => {
+  console.log("Successfully connected to the database.")
+})
+.catch(err => {
+  console.err(err);
 });
 
 app.use(logger('dev'));

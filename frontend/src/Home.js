@@ -10,7 +10,7 @@ import dog1 from "./img/dog1.jpg"
 import dog2 from "./img/dog2.jpg"
 import dog3 from "./img/dog3.jpg"
 
-const animalmap = [
+var animalmap = [
     {
       _id: 'dog',
       pets: [
@@ -76,6 +76,29 @@ const animalmap = [
       ]
     }
   ]
+
+async function updateAnimalMap() {
+  const url = "http://localhost:3001/groupPets";
+  const options = {
+    method: 'GET',
+    headers: {
+      "Accept": 'application/json'
+    } 
+  }
+  fetch(url, options)
+  .then(resp => {
+    return resp.json();
+  })
+  .then(json => {
+    animalmap = null;
+    animalmap = json;
+    return;
+  })
+  .catch(error => {
+    console.error(error);
+  })
+  return;
+}
 
 const Home = () => {
     return (

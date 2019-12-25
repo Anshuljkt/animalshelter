@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 
 // connect to database
 MONGODB_URI= "mongodb+srv://bootie:backendpractice@cluster0-0vejq.mongodb.net/animal-adoption?retryWrites=true&w=majority";
-mongoose.connect(MONGODB_URI,{ useNewUrlParser: true, useUnifiedTopology: true }, (conn, err) => {
+mongoose.connect(MONGODB_URI,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false}, (conn, err) => {
   console.log("Successfully connected to the database.")
 })
 .catch(err => {
@@ -50,8 +50,8 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+  // res.status(err.status || 500);
+  // res.render('error');
 });
 
 module.exports = app;
